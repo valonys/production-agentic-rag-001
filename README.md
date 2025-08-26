@@ -1,6 +1,6 @@
 # Production-Ready Agentic RAG Boilerplate
 
-Based on the course description for "From Prototype to Production: Ship Reliable and Scalable RAG Pipelines," I've transformed the outlined contents into a full end-to-end boilerplate. This is a fork-and-ship monorepo structure implementing an Agentic RAG application. It includes:
+Based on the Scalable RAG Pipelines," I've transformed the contents into a full end-to-end tech stack. It includes:
 
 - **Backend**: Python with LangGraph for agentic workflows (rewrite → retrieve → rerank → synthesize → cite → safety-check, with retries and timeouts), FastAPI for scalable async API, Pydantic for typed configs, and an ingestion pipeline.
 - **Frontend**: React-based chat UI with citations, source previews, conversation memory, and error handling.
@@ -9,7 +9,7 @@ Based on the course description for "From Prototype to Production: Ship Reliable
 - **Deployment**: Dockerfiles, env templates, and basic autoscaling setup (e.g., for GCP or AWS via Kubernetes manifests).
 - **Best Practices**: Typed configs, secrets management, retries, early exits, hallucination mitigation via LLM judges and structured outputs.
 
-This is production-ready with features like streaming responses, cost controls (context budgeting, top-k limits), and maintainable modules. I've synthesized code from standard patterns (inspired by LangGraph docs, tutorials, and similar repos like llm-twin-course), ensuring it aligns with the course's opinionated architecture.
+This is production-ready with features like streaming responses, cost controls (context budgeting, top-k limits), and maintainable modules. I've synthesized code from standard patterns ensuring it aligns with the current trend RAG Systems architecture.
 
 ## Tech Stack
 - **Backend**: Python 3.10+, FastAPI, LangGraph, LangChain, Pydantic, Groq/OpenAI SDK, FAISS (vector store), SentenceTransformers (embeddings), Uvicorn (server).
